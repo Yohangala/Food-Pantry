@@ -129,7 +129,7 @@
         <div class="donation-container">
             <?php
             // Include the database connection file
-            require_once "database.php";
+            require_once "database/database.php";
 
             // Establish a connection to the database
             $conn = mysqli_connect($servername, $username, $password, $database);
