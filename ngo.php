@@ -1,6 +1,6 @@
 <?php
 session_start(); // Start the session
-require_once "database.php";
+require_once "database/database.php";
 
 // Redirect to login page if user is not logged in
 if (!isset($_SESSION["ngo_user"])) {
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["confirm_pickup"])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NGO Page</title>
   <!-- Link to CSS file -->
-  <link rel="stylesheet" href="ngo.css">
+  <link rel="stylesheet" href="assets/css/ngo.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
   <!-- Font Awesome icons -->
