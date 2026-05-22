@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "database.php";
+require_once "database/database.php";
 
 if (isset($_SESSION["user"])) {
     header("Location: login.html");
@@ -47,7 +47,7 @@ if (isset($_POST["register"])) {
 <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="assets/css/registration.css">
 </head>
 <body>
 <div class="container">
