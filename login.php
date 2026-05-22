@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "database.php"; // Include your database connection file
+require_once "database/database.php"; // Include your database connection file
 
 if (isset($_SESSION["user"])) {
    header("Location: index.php");
@@ -38,7 +38,7 @@ if (isset($_POST["login"])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
 <body>
