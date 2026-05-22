@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "database.php";
+require_once "database/database.php";
 
 if (isset($_SESSION["ngo_user"])) {
     header("Location: ngo.html");
@@ -37,7 +37,7 @@ if (isset($_POST["login"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NGO Login</title>
-    <link rel="stylesheet" href="ngo_login.css">
+    <link rel="stylesheet" href="assets/css/ngo_login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
 </head>
